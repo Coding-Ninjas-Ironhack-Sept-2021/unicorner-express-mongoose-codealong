@@ -1,0 +1,23 @@
+<h1>Unicorn: {{ unicornName }}</h1>
+<p>Favourite Food: {{ favouriteFood }}</p>
+
+{{#if age }}
+<p>Age: {{ age }}</p>
+{{/if}}
+
+{{#if hobbies }}
+<h3>Hobbies:</h3>
+
+<ul>
+  {{#each hobbies}}
+  <li>{{ this }}</li>
+  {{/each}}
+</ul>
+{{/if}}
+
+<img class="profile-img" src="/images/{{ imgFile }}" />
+
+<div class="request-date">
+  <p>Request a date with this Unicorn</p>
+  <button>Get in touch</button>
+</div>
